@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 30px;
+}
+
+header img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #545454;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3545d6;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+}
+
+.search-bar i {
+    color: #aaa;
+}
+
+main {
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destaque {
+    background-image: url(./imagens.stream/filmes/servico-de-entregas-da-kiki\ \(1\).webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 30px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+.destaque h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.destaque a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3545d6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+}
+
+.destaque a:hover {
+    background-color: #545454;
+}
+
+.top-3 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.top-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.top-lista .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top-lista .rank {
+    font-size: 180px;
+    font-weight: 900;
+    color: #4848487d;
+    margin-right: -40px;
+    z-index: 1;
+}
+
+.top-lista img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.top-lista img:hover {
+    transform: scale(1.1);
+}
+
+.filmes {
+    margin-top: 50px;
+    position: relative;
+}
+
+.filme-lista {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-evenly;
+}
+
+.filme-item {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; 
+}
+
+.filme-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.filme-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.filme-item h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.series {
+    margin-top: 50px;
+    position: relative;
+}
+
+.serie-lista {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-evenly;
+}
+
+.serie-item {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; 
+}
+
+.serie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.serie-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.serie-item h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer {
+        background-color: #000;
+        color: #555;
+        text-align: center;
+        padding: 15px 30px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+

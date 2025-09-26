@@ -13,8 +13,14 @@ header {
     padding: 10px 30px;
 }
 
-header img {
+header .logo {
     height: 100px;
+}
+
+ul li {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
 }
 
 nav ul {
@@ -38,6 +44,7 @@ nav a:hover {
 
 .search-bar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #222;
     padding: 5px 10px;
@@ -57,13 +64,12 @@ nav a:hover {
 }
 
 main {
-    padding: 20px 30px;
-    max-width: 1200px;
+    padding: 20px 30px;         
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .destaque {
-    background-image: url(./imagens.stream/filmes/servico-de-entregas-da-kiki\ \(1\).webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +78,30 @@ main {
     color: #fff;
     position: relative;
     border-radius: 10px;
+}
+
+.destaque .capa-destaque {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+.destaque .info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.destaque div{
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    z-index: 2;
 }
 
 .destaque h1 {
@@ -97,6 +127,7 @@ main {
 }
 
 .top-3 {
+    gap: 20px;
     width: 100%;
     margin-top: 10px;
 }
@@ -104,22 +135,29 @@ main {
 .top-lista {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    /* gap: 40px; */
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .top-lista .item {
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
 }
 
 .top-lista .rank {
     font-size: 180px;
     font-weight: 900;
-    color: #4848487d;
+    color: #7472727d;
     margin-right: -40px;
-    z-index: 1;
+    position: absolute;
+    top:-30px;
+    left: -50px;    
+    z-index: -1;
 }
 
 .top-lista img {
@@ -127,8 +165,6 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 6px;
-    position: relative;
-    z-index: 2;
     display: block;
 }
 
@@ -141,6 +177,25 @@ main {
     position: relative;
 }
 
+.filmes h2 {
+    display: flex;
+}
+
+.filmes a {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #545454;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.filmes a:hover {
+    color: #3545d6;
+}
+
 .filme-lista {
     display: flex;
     flex-wrap: wrap;       
@@ -148,7 +203,7 @@ main {
 }
 
 .filme-item {
-    width: 250px;
+    width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -162,7 +217,7 @@ main {
 
 .filme-item img {
     width: 100%;
-    height: auto;
+    height: 280px;
     display: block;
 }
 
@@ -172,9 +227,35 @@ main {
     color: #fff;
 }
 
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+}
+
 .series {
     margin-top: 50px;
     position: relative;
+}
+
+.series a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #545454;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.series a:hover {
+    color: #3545d6;
+
 }
 
 .serie-lista {
@@ -184,7 +265,8 @@ main {
 }
 
 .serie-item {
-    width: 250px;
+    width: 200px;
+    height: 350px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -198,7 +280,8 @@ main {
 
 .serie-item img {
     width: 100%;
-    height: auto;
+    height: 280px;   
+    object-fit: cover;  
     display: block;
 }
 
@@ -217,6 +300,7 @@ footer {
         bottom: 0;
         width: 100%;
         margin-top: 40px;
+        box-sizing: border-box;
     }
 
 

@@ -70,9 +70,6 @@ main {
 }
 
 .destaque {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 120px 30px;
     text-align: left;
     color: #fff;
@@ -81,7 +78,6 @@ main {
 }
 
 .destaque .capa-destaque {
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +119,20 @@ main {
 }
 
 .destaque a:hover {
+    background-color: #9696969a;
+}
+
+.destaque #modelo {
     background-color: #545454;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.destaque #modelo:hover {
+    background-color: #9696969a;
 }
 
 .top-3 {
@@ -135,7 +144,6 @@ main {
 .top-lista {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 40px; */
     justify-content: space-evenly;
     cursor: pointer;
 }

@@ -79,8 +79,8 @@ h1{
 
 .catalogo {
  display: grid;
- grid-template-columns: repeat(3, 200px);
- grid-template-rows: repeat(4, auto);
+ grid-template-columns: repeat(4, 200px);
+ grid-template-rows: repeat(3, auto);
  gap: 40px; 
  justify-content: center; 
  padding-right: 40px;
@@ -135,7 +135,7 @@ footer {
         padding: 15px 30px;
         position: relative;
         bottom: 0;
-        width: 100%;
+        width: 100vw;
         margin-top: 40px;
         box-sizing: border-box;
-}
+    }
